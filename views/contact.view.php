@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>contact</title>
-</head>
-<body>
+<?php require('views/partials/head.php') ?>
+
+
 Contact us
-</body>
-</html>
+
+
+<?php require('views/partials/footer.php') ?>

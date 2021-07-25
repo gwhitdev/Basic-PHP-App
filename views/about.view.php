@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>about</title>
-</head>
-<body>
+<?php require('views/partials/head.php') ?>
+
+
 About
-</body>
-</html>
+<p>
+	<?= $name; ?>
+</p>
+
+<?php require('views/partials/footer.php') ?>

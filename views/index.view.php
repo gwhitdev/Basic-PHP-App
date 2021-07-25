@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Index</title>
-</head>
-<body>
+<?php require('views/partials/head.php') ?>
+
 
 	<header>
 		<h1>
@@ -23,5 +18,4 @@
 			</ul>
 		</h1>
 	</header>
-</body>
-</html>
+<?php require('views/partials/footer.php') ?>

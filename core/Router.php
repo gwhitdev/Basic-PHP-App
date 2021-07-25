@@ -4,6 +4,13 @@ class Router
 {
     protected $routes = [];
 
+    public static function load($file)
+    {
+        $router = new static;
+        require $file;   
+        return $router;
+    }
+
     public function define($routes)
     {
         $this->routes = $routes;
@@ -17,4 +24,6 @@ class Router
         }
         throw new Exception('No route defined for this URL');
     }
+
+    
 }
