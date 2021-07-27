@@ -1,5 +1,7 @@
 <?php
 
+
+
 class PagesController
 {
     public function home()
@@ -7,14 +9,14 @@ class PagesController
         $db = App::get('database');
 
         $tasks = $db->selectAll('todos');
-        $users = $db->selectAll('users');
-        return view('index', compact('users','tasks'));
+        
+        return view('index', compact('tasks'));
     }
     public function about()
     {
-        $name = "Gareth Devs";
+        $me = "Gareth Devs";
 
-        return view('about');
+        return view('about',compact('me'));
     }
     public function contact()
     {
@@ -30,17 +32,6 @@ class PagesController
         $values = ['description' => $task->description, 'completed' => $task->completed];
         $db = App::get('database');
         $db->insert('todos',$values);
-        $tasks = $db->selectAll('todos');
-        header('Location: /');
-    }
-
-    public function addUser()
-    {
-        $user = new User($_POST['name']);
-        $values = ['name' => $user->name];
-        $db = App::get('database');
-        $db->insert('users',$values);
-        $users = $db->selectAll('users');
-        header('Location: /');
+        return redirect('');
     }
 }

@@ -3,7 +3,7 @@
 
 About
 <p>
-	<?= $name; ?>
+	<?= $me; ?>
 </p>
 
 <?php require('views/partials/footer.php') ?>

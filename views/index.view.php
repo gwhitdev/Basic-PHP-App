@@ -1,20 +1,13 @@
 <?php require('views/partials/head.php') ?>
 
 <form method="POST"action="/addTask">
-
-<input type="text"name="title">
 <input type="text"name="description">
 
 <button>Submit</button>
 
 </form>
 
-<form method="POST"action="/addUser">
-<label for="name">Name:</label>
-<input type="text"name="name">
-<button>Create User</button>
 
-</form>
 
 
 
