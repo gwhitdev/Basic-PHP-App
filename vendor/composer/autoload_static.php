@@ -7,19 +7,19 @@ namespace Composer\Autoload;
 class ComposerStaticInit21fa77319842f56945754b9048f97134
 {
     public static $classMap = array (
-        'App' => __DIR__ . '/../..' . '/core/app.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
+        'App\\Core\\App' => __DIR__ . '/../..' . '/core/app.php',
+        'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
+        'App\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
+        'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'App\\Models\\Task' => __DIR__ . '/../..' . '/app/models/Task.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/models/User.php',
         'ComposerAutoloaderInit21fa77319842f56945754b9048f97134' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit21fa77319842f56945754b9048f97134' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
-        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
-        'Request' => __DIR__ . '/../..' . '/core/Request.php',
-        'Router' => __DIR__ . '/../..' . '/core/Router.php',
-        'Task' => __DIR__ . '/../..' . '/core/Task.php',
-        'User' => __DIR__ . '/../..' . '/core/User.php',
-        'UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

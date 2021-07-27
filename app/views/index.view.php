@@ -1,4 +1,4 @@
-<?php require('views/partials/head.php') ?>
+<?php require('../app/views/partials/head.php') ?>
 
 <form method="POST"action="/addTask">
 <input type="text"name="description">
@@ -21,4 +21,4 @@
     <?php endforeach ?>
 </ul>
 
-<?php require('views/partials/footer.php') ?>
+<?php require('../app/views/partials/footer.php') ?>

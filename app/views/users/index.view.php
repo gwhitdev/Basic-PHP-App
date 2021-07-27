@@ -1,4 +1,4 @@
-<?php require('views/partials/head.php') ?>
+<?php require('../app/views/partials/head.php') ?>
 <div>
     <h1>
         All Users
@@ -18,4 +18,4 @@
         <button>Create User</button>
     </form>
 </div>
-<?php require('views/partials/footer.php') ?>
+<?php require('../app/views/partials/footer.php') ?>

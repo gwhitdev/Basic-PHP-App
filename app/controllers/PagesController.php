@@ -1,6 +1,11 @@
 <?php
 
+namespace App\Controllers;
 
+use App\Core\{App};
+use App\Models\Task;
+use function App\Core\view;
+use function App\Core\redirect;
 
 class PagesController
 {

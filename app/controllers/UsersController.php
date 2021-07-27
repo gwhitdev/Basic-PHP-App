@@ -1,4 +1,10 @@
 <?php
+namespace App\Controllers;
+
+use App\Core\App;
+use function App\Core\view;
+use function App\Core\redirect;
+
 
 class UsersController
 {

@@ -1,5 +1,8 @@
 <?php
 
+namespace App\Core;
+use Exception;
+
 class Router
 {
     protected $routes = [
@@ -10,7 +13,7 @@ class Router
     public static function load($file)
     {
         $router = new static;
-        require $file;   
+        require "../$file";   
         return $router;
     }
     public function direct($uri,$requestType)
@@ -26,6 +29,7 @@ class Router
 
     protected function callAction($controller, $action)
     {
+        $controller = "App\Controllers\\{$controller}";
         $controller = new $controller;
         if(! method_existS($controller, $action))
         {
