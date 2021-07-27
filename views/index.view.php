@@ -1,21 +1,35 @@
 <?php require('views/partials/head.php') ?>
 
+<form method="POST"action="/addTask">
 
-	<header>
-		<h1>
-			<ul>
-				<?php foreach($tasks as $task ): ?>
+<input type="text"name="title">
+<input type="text"name="description">
 
-					<li>
-						<?php if($task->completed) : ?>
-							<strike><?= $task->description; ?></strike>
-						<?php else: ?>
-							<?= $task->description; ?> 
-						<?php endif; ?>
-								
-					</li>
-				<?php endforeach; ?>
-			</ul>
-		</h1>
-	</header>
+<button>Submit</button>
+
+</form>
+
+<form method="POST"action="/addUser">
+<label for="name">Name:</label>
+<input type="text"name="name">
+<button>Create User</button>
+
+</form>
+
+<ul>
+    <?php foreach($users as $user): ?>
+        <li><?= $user->name ?></li>
+    <?php endforeach ?>
+</ul>
+
+<ul>
+    <?php foreach($tasks as $task): ?>
+        <?php if($task->completed == true): ?>
+            <li><strike><?= $task->description ?></strike></li>
+        <?php else: ?>
+            <li><?= $task->description ?></li>
+        <?php endif ?>
+    <?php endforeach ?>
+</ul>
+
 <?php require('views/partials/footer.php') ?>

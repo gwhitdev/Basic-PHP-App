@@ -3,7 +3,10 @@
 class Task
 {
 	public $description;
-	public $completed;
+	public $completed = 0;
 
-	
+	public function __construct(string $description)
+	{
+		$this->description = $description;
+	}
 }
