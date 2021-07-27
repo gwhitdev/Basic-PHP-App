@@ -12,9 +12,11 @@ return array(
     'Composer\\Autoload\\ComposerStaticInit21fa77319842f56945754b9048f97134' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Connection' => $baseDir . '/core/database/Connection.php',
+    'PagesController' => $baseDir . '/controllers/PagesController.php',
     'QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'Request' => $baseDir . '/core/Request.php',
     'Router' => $baseDir . '/core/Router.php',
     'Task' => $baseDir . '/core/Task.php',
     'User' => $baseDir . '/core/User.php',
+    'UsersController' => $baseDir . '/controllers/UsersController.php',
 );

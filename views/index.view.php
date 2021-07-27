@@ -16,11 +16,7 @@
 
 </form>
 
-<ul>
-    <?php foreach($users as $user): ?>
-        <li><?= $user->name ?></li>
-    <?php endforeach ?>
-</ul>
+
 
 <ul>
     <?php foreach($tasks as $task): ?>

@@ -1,7 +1,9 @@
 <?php
 
-$router->get('','controllers/index.php');
-$router->get('about','controllers/about.php');
-$router->post('names','controllers/names.php');
-$router->post('addTask','controllers/addTask.php');
-$router->post('addUser','controllers/addUser.php');
+$router->get('','PagesController@home');
+$router->get('about','PagesController@about');
+$router->get('contact','PagesController@contact');
+$router->post('addTask','PagesController@addTask');
+$router->post('addUser','PagesController@addUser');
+
+$router->get('users','UsersController@index');
